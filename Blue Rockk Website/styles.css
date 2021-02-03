@@ -1,0 +1,302 @@
+/* font-family: 'Bangers', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Staatliches', cursive; */
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fafbfb;
+}
+.background {
+  /* width: 720px;
+    height: 600px; */
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 100vh solid #282828;
+  border-right: 45vw solid transparent;
+  border-left: 20vw solid #282828;
+}
+.title {
+  font-size: 2.8vw;
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* font-family: 'Francois One', sans-serif; */
+  /* font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Julius Sans One', sans-serif; */
+  /* font-family: 'Oswald', sans-serif; */
+
+  /* font-weight: 500; */
+}
+.description {
+  position: relative;
+  top: 11vh;
+  width: 40vw;
+  margin: 2vw;
+}
+.description.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+.info {
+  font-weight: 500;
+  font-size: 1.1vw;
+  width: 36vw;
+  color: gray;
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Source Sans Pro', sans-serif;  */
+}
+.header a {
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  text-decoration: none;
+  color: black;
+}
+.header {
+  width: 100vw;
+  height: 75px;
+  /* border:1px solid black; */
+}
+.header.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.footer.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.bodycenter {
+  position: relative;
+  top: 6vh;
+}
+
+.bodycenter .mainImg {
+  width: 35vw;
+  position: absolute;
+  top: 11vh;
+  left: 57vw;
+}
+.mainImg.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+.logo {
+  width: 7.5vw;
+  position: relative;
+  bottom: 2vw;
+  right: 0.7vw;
+}
+
+.bodycenter .description button {
+  font-size: 1vw;
+  text-decoration: none;
+  border: 0.12vw solid #ffa500;
+  padding: 0.5vw;
+  border-radius: 1vw;
+  transition-duration: 0.2s;
+  margin: 15px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 550;
+  outline: none;
+  cursor: pointer;
+}
+.bodycenter .description button:hover {
+  background-color: orange;
+  color: white;
+}
+.howTo:hover {
+  background-color: #ffa500;
+  color: white;
+}
+@media screen and (max-width: 1473px) {
+  .howTo {
+    background-color: #fafbfb;
+  }
+}
+
+.line {
+  width: 23vw;
+  background: #808080;
+  height: 0.5px;
+  position: relative;
+  bottom: 40px;
+  right: 24px;
+}
+.footer {
+  position: absolute;
+  min-width: 100vw;
+  max-height: 40px;
+  /* bottom: 0; */
+  top: 76.8vh;
+}
+.footer h6 {
+  display: inline;
+  font-size: 0.9vw;
+}
+.loginPage {
+  /* background:red; */
+  background: white;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+
+  border-radius: 2px;
+  box-shadow: 1px 1px 20px black;
+  display: none;
+  /* justify-content: space-between; */
+}
+.loginHeader,
+.signUpHeader {
+  /* background:coral; */
+  font-family: "Hammersmith One", sans-serif;
+  padding: 10px;
+  order: 1;
+}
+.loginUnderline,
+.signUpUnderline {
+  /* background:blue; */
+  background: #c4c5c5;
+  width: 349px;
+  height: 2px;
+}
+.loginForm,
+.signUpForm {
+  /* background-color:gray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.loginForm input,
+.signUpForm input {
+  width: 300px;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid orange;
+  font-size: 17px;
+  outline: none;
+}
+.loginForgotAccount,
+.signUpText {
+  margin-left: 30px;
+  margin-top: 8px;
+}
+.loginForgotAccount a {
+  text-decoration: none;
+  color: #045286;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.signUpText h6 {
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.signUpText h6 a {
+  text-decoration: none;
+  color: orange;
+}
+.loginButton,
+.signUpButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background:blue; */
+  margin-top: 15px;
+}
+.loginButton a,
+.signUpButton a {
+  text-decoration: none;
+}
+.loginButton a h3,
+.signUpButton a h3 {
+  padding: 6px;
+  width: 150px;
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: orange;
+  border-color: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.loginCloseButton,
+.signUpCloseButton {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 35px;
+  background-color: none;
+  position: relative;
+  order: 2;
+  margin-left: 200px;
+}
+.loginCloseButton button,
+.signUpCloseButton button {
+  font-size: 25px;
+  color: black;
+  border: 1px solid orange;
+  border-radius: 60px;
+  background-color: orange;
+  width: 30px;
+  height: fit-content;
+  transform: translate(15.5px, -10px);
+  outline: none;
+  cursor: pointer;
+}
+
+.signUpCloseButton {
+  margin-left: 180px;
+}
+.loginHead,
+.signUpHead {
+  display: flex;
+}
+.signUpPage {
+  /* background:red; */
+  background: white;
+  width: 350px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 6vh;
+  left: 40vw;
+  display: none;
+  border-radius: 2px;
+  box-shadow: 1px 1px 20px black;
+  /* justify-content: space-between; */
+}
