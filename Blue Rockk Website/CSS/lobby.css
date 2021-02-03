@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+/*Header*/
+.header {
+  display: flex;
+  background: #282828;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 45px; /*check*/
+  box-shadow: 2px 0.6px 10px #282828;
+}
+.header .title {
+  display: flex;
+  align-items: flex-start;
+}
+.header .title img {
+  width: 40px;
+}
+.header .title .head {
+  margin-top: 5px;
+  color: rgb(202, 196, 196);
+  font-family: "Hammersmith One", sans-serif;
+}
+.header .buttons {
+  display: flex;
+}
+.header a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 4px;
+  margin-right: 18px;
+  color: rgb(202, 196, 196);
+  border: 1.5px solid orange;
+  padding: 7px;
+  border-radius: 18px;
+  transition-duration: 0.2s;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.header a:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Bar */
+.bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 47px; /*check*/
+}
+.bar .leftButtons {
+  display: flex;
+}
+.bar .leftButtons div {
+  padding-right: 30px;
+}
+.bar button {
+  color: rgb(202, 196, 196);
+  border: 1.5px solid orange;
+  padding: 7px;
+  border-radius: 18px;
+  transition-duration: 0.2s;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  background-color: #282828;
+  cursor: pointer;
+  outline: none;
+}
+.bar .profile button {
+  width: 70px;
+  margin-right: 7px;
+}
+/* Friends */
+.friends {
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+.friends .friendsList {
+  background-color: whitesmoke;
+  height: calc(100vh - 45px - 47px - 30px);
+}
+.friends .friendsHead {
+  height: 30px;
+  display: flex;
+}
+.friends .friendsHead button {
+  width: 8vw;
+  border: none;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  border: 1px solid none;
+  outline: none;
+}
+.friendsButton {
+  background-color: orange;
+  border-top-left-radius: 10px;
+  color: #282828;
+}
+.recentButton {
+  background-color: #282828;
+  color: #fafbfb;
+  cursor: pointer;
+}
+/* Chat */
+.chatInputText {
+  width: 8vw;
+  height: 30px;
+  resize: none;
+  flex-grow: 1;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-left: 2px;
+  overflow: hidden;
+  border-color: orange;
+  border-radius: 6px;
+  outline: none;
+}
+.chatSendText {
+  border: none;
+  width: 2vw;
+  color: orange;
+  background-color: white;
+  border: 1px solid orange;
+  border-radius: 6px;
+}
+
+.chatOuter {
+  width: 15vw;
+  /* height: 290px; */
+  height: calc(100vh - 45px - 47px);
+  /* max-height: 40vh; */
+  /* min-width: 150px; */
+  position: absolute;
+  /* bottom: 0; */
+  display: flex;
+  right: 16.2vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+.chat {
+  width: 15vw;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.chatData {
+  background: linear-gradient(rgba(255, 221, 0, 0.9), rgba(251, 176, 52, 0.9));
+  height: 230px;
+  padding: 8px;
+}
+.chatHead {
+  height: 30px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 200;
+  font-size: 8px;
+  padding: 6px;
+  color: #fafbfb;
+  background-color: #282828;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.chatCloseButton {
+  font-size: 18px;
+  color: black;
+  border: 1px solid orange;
+  border-radius: 50px;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
+  transform: translate(15px, -12px);
+  outline: none;
+  cursor: pointer;
+}
+.chatInput {
+  display: flex;
+  flex-flow: row;
+}
+
+/* Main */
+
+.main {
+  width: 60vw;
+  position: absolute;
+  right: 35.5vw;
+  bottom: 30px;
+  height: calc(100vh - 45px - 47px - 30px);
+  display: flex;
+  flex-direction: column;
+}
+.mainButton {
+  display: flex;
+  background-color: #fafbfb;
+}
+.mainButton a {
+  width: 8vw;
+  color: #fafafb;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  border: 1px solid none;
+  text-decoration: none;
+  padding: 10px;
+  /* border-left: 1px solid #282828;
+  border-top: 1px solid #282828; */
+  background-color: orange;
+  text-align: center;
+  box-shadow: 0px 0px 10px #282828;
+}
+.mainClan {
+  /* border-right: 1px solid #282828; */
+  border-top-right-radius: 5px;
+  
+}
+.mainClan i{
+  margin-left:10px;
+}
+.mainPractice {
+  border-top-left-radius: 5px;
+}
+.mainBody {
+  background: url(./MainBackground4.jpg) center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 45px - 47px - 30px - 38px);
+  justify-content: center;
+  box-shadow: 1px 1px 10px grey;
+  padding-right: 3vw;
+  padding-bottom: 12vh;
+  /* background-repeat: no-repeat; */
+
+}
+.mainBody a {
+  text-decoration: none;
+  border: 1px solid #ff7f27;
+  background-color: #ff7f27;
+  color: #fafbfb;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: lighter;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+.mainStart {
+  padding: 4px;
+  width: 16vw;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.mainChallenge {
+  padding: 10px;
+  font-size: 1.6vw;
+  width: 14vw;
+  text-align: center;
+}
+.mainBody a:hover {
+  background-color: #fafafb;
+  color: #282828;
+  border-color: #fafafb;
+}
+/*rankBody*/
+.rank{
+  position:absolute;
+  right:16vw;
+  background-color:#fafbfb;
+  height: calc(100vh - 45px - 47px);
+  z-index:-1;
+  display:flex;
+  justify-content: center;
+  align-items:center ;
+}
+.rankImg{
+  width:18.5vw;
+  margin:8px;
+  box-shadow:1px 1px 20px #282828;
+}
+/*footer*/
+.footerOuter{
+width:69vw;
+height: calc(100vh - 45px - 47px);
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+/*AddFriendPopUp*/
+.addFriendPopUp,.requestPopUp{
+  background:#282828;
+  position: absolute;
+  top:92px;
+  border:2px solid orange;
+  margin-left:8px;
+  width:16vw;
+  border-radius:4px;
+  padding:4px;  
+  display: none;
+  height:30vh;
+  flex-direction: column;
+
+
+}
+.requestPopUp{
+
+  width:12vw;
+  /* min-height: 30vh;
+  max-height: 30vh; */
+
+}
+.requestBody{
+  height:200px;
+  color:#fafbfb;
+
+ height: calc(30vh - 30px);
+
+}
+.requestHead{
+  border-bottom:1px solid orange;
+  height: 30px;
+}
+.AddFriendID{
+display: flex;
+justify-content: space-between;
+height: 30px;
+}
+.AddFriendID .ID{
+  font-size:15px;
+
+  padding: 4px;
+  border-color:orange;
+  border-radius: 6px;
+  outline: none;
+  width:13vw;
+
+}
+.AddFriendID #searchButton{
+  background-color:white;
+  color:orange;
+  width:2.5vw;
+ 
+  padding-top:20px ;
+  border-color:orange;
+  border-radius:6px;
+  font-size:19px;
+  text-align: center;
+  padding-top:6px;
+  outline: none;
+  cursor: pointer;
+}
+.AddFriendResult{
+  padding-top:4px;
+  padding-left:8px;
+  color:#fafbfb;
+  /* height: 200px;
+  max-height: 25vh; */
+  height:calc(30vh - 60px);
+}
+
+
+.searchHead,.requestHead {
+  height: 30px;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 200;
+  font-size: 0.5vw;
+  padding: 6px;
+  color: #fafbfb;
+  background-color: #282828;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.searchCloseButton,.requestCloseButton {
+  font-size: 18px;
+  color: black;
+  border: 1.5px solid #282828;
+  border-radius: 50px;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
+  transform: translate(16px, -16px);
+  outline: none;
+  cursor: pointer;
+}
+

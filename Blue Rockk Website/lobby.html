@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobby</title>
+    <link rel="stylesheet" href="./CSS/lobby.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Julius+Sans+One&family=Nanum+Gothic&family=Roboto+Mono:wght@300&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Fjalla+One&family=Francois+One&family=Fredericka+the+Great&family=Hammersmith+One&family=Julius+Sans+One&family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---Header-->
+    <div class="header">
+      <div class="title">
+        <img src="./Images/logo.jpg" alt="" />
+        <h1 class="head">Blue Rockk</h1>
+      </div>
+      <div class="buttons">
+        <a href="#">About</a>
+        <a href="#">Log Out</a>
+      </div>
+    </div>
+    <!-----Bar----->
+    <div class="bar">
+      <div class="leftButtons">
+        <div class="addFriend">
+          <button class="addFriendButton">Add Friend</button>
+        </div>
+        <div class="requests">
+          <button class="requestButton">Requests</button>
+        </div>
+      </div>
+      <div class="profile">
+        <button class="profileButton">Profile</button>
+      </div>
+    </div>
+    <!-----Friends----->
+    <div class="friends">
+      <div class="friendsHead">
+        <button class="friendsButton">Friends</button>
+        <button class="recentButton">Recent</button>
+      </div>
+      <div class="friendsList"></div>
+    </div>
+
+    <!--Chat-->
+    <div class="chatOuter">
+      <div class="chat">
+        <div class="chatHead">
+          <h1>Teja</h1>
+          <div class="loginCloseButton">
+            <button class="chatCloseButton">&times;</button>
+          </div>
+        </div>
+        <div class="chatData">Hi</div>
+        <div class="chatInput">
+          <textarea
+            class="chatInputText"
+            name=""
+            id=""
+            cols="30"
+            rows="100"
+          ></textarea>
+          <button class="chatSendText">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Main-->
+    <div class="main">
+      <div class="mainButton">
+        <a href="#" class="mainPractice">Practice</a>
+        <a href="#" class="mainCustom">Custom</a>
+        <a href="#" class="mainClan">Clan<i class="fa fa-lock" aria-hidden="true"></i></a>
+      </div>
+      <div class="mainBody">
+        <a href="#" class="mainStart">START</a>
+        <a href="#" class="mainChallenge">Challenge Friend</a>
+      </div>
+    </div>
+    <!--Rank-->
+    <div class="rank">
+      <img class="rankImg"src="./Images/sk.png" alt="">
+    </div>
+    <!--footer-->
+    <div class="footerOuter">
+      <div class="footer">
+        <h6>&copy; bluerockk.com 2020</h6>
+      </div>
+    </div>
+    <!--addFriendPopUp-->
+    <div class="addFriendPopUp">
+      <div class="searchHead">
+        <h1>Search Player</h1>
+        <div class="searchCloseButtonDiv">
+          <button class="searchCloseButton">&times;</button>
+        </div>
+      </div>
+      <div class="AddFriendID"><input type="text" placeholder="Enter ID" class="ID"><i id="searchButton"class="fa fa-search"></i></div>
+      <div class="AddFriendResult">Result</div>
+    </div>
+    <!--friendRequestPopUp-->
+    <div class="requestPopUp">
+      <div class="requestHead">
+        <h1>Friend requests</h1>
+        <div class="requestCloseButtonDiv">
+          <button class="requestCloseButton">&times;</button>
+        </div>
+      </div>
+      <div class="requestBody">Requests</div>
+    </div>
+    
+    <script src="./JavaScript/lobby.js"></script>
+  </body>
+</html>
